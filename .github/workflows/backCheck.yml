@@ -30,7 +30,9 @@ jobs:
         run: echo Hello, world!
 
       - name: Install dependencies
+        working-directory: ./backend
         run: npm install
 
       - name: Start server
+        working-directory: ./backend
         run: node server.js

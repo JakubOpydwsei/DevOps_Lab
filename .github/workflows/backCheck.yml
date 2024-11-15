@@ -35,4 +35,4 @@ jobs:
 
       - name: Start server
         working-directory: ./backend
-        run: node server.js
+        run: node server.js &

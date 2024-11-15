@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node src/data/module-data-generator.js && vite",
-    "build": "vite build",
+    "build": "node src/data/module-data-generator.js && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

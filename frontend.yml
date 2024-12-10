@@ -3,7 +3,7 @@ kind: Deployment  # Typ zasobu (Deployment - do zarządzania aplikacjami w Kuber
 metadata:
   name: frontend  # Nazwa Deploymentu
 spec:
-  replicas: 1  # Liczba replik (podów) dla aplikacji frontend
+  replicas: 2  # Liczba replik (podów) dla aplikacji frontend
   selector:
     matchLabels:
       app: frontend  # Używa selektora do dopasowania podów o etykiecie "app: frontend"

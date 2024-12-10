@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile # Używa pliku Dockerfile z bieżącego katalogu do budowy obrazu
     container_name: frontend # Ustawia nazwę kontenera na "frontend"
     ports:
-      - "8080:5173" # Mapuje port 5173 w kontenerze na port 8080 na hoście
+      - "5173:5173" # Mapuje port 5173 w kontenerze na port 5173 na hoście
     environment:
       - VITE_APP_BACKEND_ADDRESS=http://backend:3000/api/data # Zmienna środowiskowa wskazująca adres backendu
     networks:
